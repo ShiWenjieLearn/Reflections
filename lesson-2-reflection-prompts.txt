@@ -12,6 +12,13 @@ What value do you think it offers?
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+	This can be done in several steps:
+	1. Run the current project in the working directory to confirm that the current project contains the logical change.
+	2. use git diff command to check that the current project and the one in the staging area are different in just one logical change.
+	3. Add related files associated with the logical change to the staging area using git add [file]
+	4. Run git diff --stage command to confirm that the most recent commit differs from the staging commit just by one logical change.
+	5. Run git commit.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
